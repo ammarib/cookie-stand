@@ -104,7 +104,7 @@ function footerRend() {
 }
 
 headerRend();
-for (var i = 0; i < shops.length; i++) {
+for (var i = 0; i< shops.length;i++){
     shops[i].render();
 }
 footerRend();
