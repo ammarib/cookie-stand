@@ -109,3 +109,17 @@ footer{
   display: block;
   
 }
+
+form{
+display: inline-block;
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 255, 0.568);
+  border: black;
+  border-radius: 6px;
+}
+label{
+  font-weight: bolder;
+}
