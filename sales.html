@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salmon Sales</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
     <header class="page-header">
         <h1>Salmon Cookies</h1>
         <img src="img/salmon.png" alt="salmon fish">
         <div>
-                <a href="index.html">Home</a>
-                <a href="sales.html">Sales</a>
-        
+            <a href="index.html">Home</a>
+            <a href="sales.html">Sales</a>
+
         </div>
 
     </header>
-
+    <form id="adding-location">
+        <fieldset>
+            <legend>Add new store to our table</legend>
+            <label for="store">Store Location</label>
+            <input name="location" id="name" type="text" required>
+            <label for="min" >Minimum Customer per hour</label>
+            <input name="min" type="number" required>
+            <label for="max">Maximum Customer per hour</label>
+            <input name="max" type="number" required>
+            <label for="avrg">Average cookies per sale</label>
+            <input name="avrg" type="text" placeholder="Enter any number" required>
+            <button type="submit">Add Location</button>
+        </fieldset>
+    </form>
     <div id="theTotalSales">
-
-
-
-
-
-
 
     </div>
 
     <script src="js/app.js"></script>
 </body>
+
 </html>
