@@ -80,6 +80,7 @@ td{
 /* add IMAGE AS body background */  
 
 body{
+
   background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2ChocolateChipCookies.jpg/1280px-2ChocolateChipCookies.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
