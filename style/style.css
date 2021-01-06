@@ -1,12 +1,12 @@
 .page-header {
-    background-color: #3E50DA;
+    background-color: #12232E;
     overflow: hidden;
   }
   
   /* Style the links inside the navigation bar */
   .page-header a {
     float: left;
-    color: #000000;
+    color: #cee8f5;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -42,56 +42,22 @@
     font-family: helvetica;
     
 }
-body{
-  background-color: rgb(145, 196, 172);
-}
 .welcomeMssg p{
   color: rgb(0, 0, 0);
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: x-large;
   display: block;
   width: 800px;
   margin-top: 5px;
   margin-bottom: 25px;
   margin-left: 40px;
 }
-.welcomeMssg ul{
-  color: rgb(0, 0, 0);
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: x-large;
-  display: block;
-  width: 800px;
-  margin-top: 5x;
-  margin-left: 40px;
-}
-h1.entry-title {
-  background-color: #3871c2;
-  color: #FFFFFF;
-  margin-top: 20px;
-  padding: -40px 80px 5px 20px;
-  padding-top: 23px !important;
-  background-image: url(/wp-content/uploads/fish-02.png);
-  max-width: 100%;
-  height: 80px;
-  background-repeat: no-repeat;
-  background-position: right;
-}
-div{
-  display: block;
-}
-footer{
-  float: right;
 
-}
-.places ul{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: x-large;
+.entry-title {
+  margin-bottom: 30PX;
   display: block;
-  width: 800px;
-  height: 200px;
-  margin-top: 5px;
-  margin-left: 40px;
+  border-radius: 4px;
 }
+
 table{
   margin-top: 70px;
   margin-left: 40px;
@@ -110,4 +76,36 @@ th {
 }
 td{
   height: 50px;
+}
+/* add IMAGE AS body background */  
+
+body{
+  background-image:url("http://www.acup4mycake.com/wp-content/uploads/2014/07/Bubbles__1405442093_77.99.162.2371-1024x682.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* change items look */  
+div{
+  display: block;
+  background-color:#349ed6c9;
+  margin-top: 25px;
+  border-radius: 3px;
+  margin-left: 60px;
+  margin-right: 60px;
+
+  
+}
+p{
+  font-size: 16pt;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+footer{
+  float: right;
+
+}
+.welcomeMssg p{
+  display: block;
+  
 }
