@@ -5,7 +5,7 @@ var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '
 
 var shops = [];
 
-function Salmon( 
+function Salmon(
     name,
     min,
     max,
@@ -79,12 +79,14 @@ function headerRend() {
     tr1.appendChild(theTotals);
 
 }
+
 function footerRend() {
     var tr1 = document.createElement('tr');
+    tr1.setAttribute('id', 'totalHourly')
     table1.appendChild(tr1);
     var tData = document.createElement('td');
-    tr1.appendChild(tData);
-    tData.textContent = 'Total';
+    tr1.appendChild(tData)
+    tData.textContent = 'Total per Hour';
     var totalHours;
     var finalTotal = 0;
     for (var h = 0; h < hours.length; h++) {
@@ -97,17 +99,37 @@ function footerRend() {
         finalTotal += totalHours;
         tr1.appendChild(totalDataTaHou);
     }
+
     var tdAllTotals = document.createElement('td');
     tdAllTotals.textContent = finalTotal;
     tr1.appendChild(tdAllTotals);
 
 }
-
 headerRend();
-for (var i = 0; i< shops.length;i++){
+for (var i = 0; i < shops.length; i++) {
     shops[i].render();
 }
 footerRend();
+var locationForm = document.getElementById('adding-location');
+
+locationForm.addEventListener('submit', function (event) {
+    var last = document.getElementById('totalHourly');
+    totalHourly.remove();
+    event.preventDefault();
+
+    var name = event.target.name.value;
+    var min = event.target.min.value;
+    var max = event.target.max.value;
+    var avrg = event.target.avrg.value;
+
+    var newStore = new Salmon(name, min, max, avrg)
+    newStore.render();
+    console.log(newStore);
+    footerRend();
+});
+
+
+
 // var Seattle = {
 //     location: 'Seattle',
 //     min: 23,
