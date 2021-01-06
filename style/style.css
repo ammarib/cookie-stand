@@ -80,7 +80,8 @@ td{
 /* add IMAGE AS body background */  
 
 body{
-  background-image:url("https://modo3.com/thumbs/fit630x300/84997/1480927891/%D8%A3%D8%B3%D9%87%D9%84_%D8%B7%D8%B1%D9%8A%D9%82%D8%A9_%D9%84%D8%B9%D9%85%D9%84_%D8%A7%D9%84%D9%83%D9%88%D9%83%D9%8A%D8%B2.jpg");
+
+  background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2ChocolateChipCookies.jpg/1280px-2ChocolateChipCookies.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
